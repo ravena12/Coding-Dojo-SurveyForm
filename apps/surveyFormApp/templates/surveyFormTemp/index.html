@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+</head>
+<body>
+<h1> Terminerrrrr </h1>
+{{ request.session.counter }}
+<form action ="/process" method = 'POST'>
+	{% csrf_token %}
+	<p>
+	Your Nurrme:
+	<input type ='text' name='f_name'>
+	</p>
+	<p>
+		Durjo Lurrcution:
+		<select name="dojoLocation">
+			<option value = "Seattle">Seattle </option>
+			<option value = "Washington D.C">Washington D.C </option>
+			<option value = "Chicago">Chicago </option>
+			<option value = "Burbank">Burbank </option>
+		</select>
+	</p>
+	<p>
+		Fav. Lerng:
+		<select name ='favlang'>
+			<option value ="Python">Python </option>
+		</select>
+	</p>
+	Cuurrmuunts: optionurrll
+	<p>
+		<textarea name ="comments" rows= 10 cols =80></textarea>
+	</p>
+	<input type='submit' value='submit'>
+</form>
+
+
+</body>
+</html>
